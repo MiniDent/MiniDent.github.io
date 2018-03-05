@@ -1,0 +1,170 @@
+<template>
+  <div id="app">
+    <img src="../images/minident-logo.png" class="minidet-logo"/>
+
+    <div class="social-links">
+      <a href="https://www.facebook.com/minidentmd/" class="social-link facebook-link" target="_blank">MiniDent</a>
+      <a href="https://ok.ru/profile/556255533822" class="social-link odnoklassniki-link" target="_blank">MiniDent</a>
+      <a href="mailto:info@minident.md" class="social-link mail-link">info@minident.md</a>
+
+      <a href="tel:079-69-70-71" class="tel-link social-link moldcell">079-69-70-71</a>
+      <div class="merged-link">
+        <a href="#" class="whatsapp-link inline-link" title="Whatsapp"></a>
+        <a href="#" class="viber-link inline-link" title="Viber"></a>
+        <a href="tel:068-92-01-53" class="tel-link social-link">068-92-01-53</a>
+      </div>
+    </div>
+    <ReviewGalery/>
+  </div>
+</template>
+
+<script>
+
+import ReviewGalery from './components/ReviewGalery'
+
+export default {
+  name: 'App',
+  components: {
+    ReviewGalery
+  }
+}
+</script>
+
+<style>
+  @font-face {
+    font-family: 'eraserdustregular';
+    src: url("../fonts/erasdust-webfont.eot");
+    src: url("../fonts/erasdust-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/erasdust-webfont.woff2") format("woff2"), url("../fonts/erasdust-webfont.woff") format("woff"), url("../fonts/erasdust-webfont.ttf") format("truetype"), url("../fonts/erasdust-webfont.svg#eraserdustregular") format("svg");
+    font-weight: normal;
+    font-style: normal; }
+  html {
+    box-sizing: border-box; }
+
+  *, *:before, *:after {
+    box-sizing: inherit; }
+
+  body {
+    font-family: 'eraserdustregular'; }
+
+  a {
+    text-decoration: none;
+    color: inherit; }
+
+  .minidet-logo {
+    width: 60%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15%; }
+
+  .social-links {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    padding: 0 15px;
+    text-align: center; }
+
+  .social-link {
+    display: inline-block;
+    font-size: 32px;
+    vertical-align: middle;
+    padding: 3px 0;
+    margin: 3px 0; }
+
+  .facebook-link {
+    color: #3b5998;
+    background: url(../images/fb.png) no-repeat 0 0;
+    background-size: 20px 32px;
+    padding-left: 32px;
+    margin-left: 5px;
+    margin-right: 5px; }
+
+  .mail-link {
+    color: #d7b631;
+    background: url(../images/email.png) no-repeat 0 0;
+    background-size: 32px 32px;
+    padding-left: 42px;
+    font-size: 28px; }
+
+  .odnoklassniki-link {
+    color: #ed812b;
+    background: url(../images/ok.png) no-repeat 0 0;
+    background-size: 21px 32px;
+    padding-left: 30px;
+    margin-left: 5px;
+    margin-right: 5px; }
+
+  .tel-link {
+    color: #d7b631;
+    background: url(../images/phone.png) no-repeat 0 0;
+    background-size: 30px 31px;
+    padding-left: 40px;
+    font-size: 24px; }
+
+  .merged-link {
+    margin-top: 6px; }
+
+  .viber-link {
+    width: 31px;
+    height: 31px;
+    display: inline-block;
+    background: url(../images/viber.png) no-repeat 0 0;
+    background-size: 31px 31px;
+    margin-right: 8px;
+    vertical-align: middle; }
+
+  .whatsapp-link {
+    width: 32px;
+    height: 28px;
+    display: inline-block;
+    background: url(../images/whatsapp.png) no-repeat 0 0;
+    background-size: 32px 28px;
+    margin-right: 8px;
+    vertical-align: middle; }
+
+  @media (min-width: 768px) {
+    .minidet-logo {
+      position: absolute;
+      transform: translateY(-50%) translateX(-50%);
+      left: 50%;
+      top: 50%;
+      margin-top: 0%;
+      max-width: 504px; }
+
+    .social-links {
+      position: static; }
+
+    .social-link {
+      position: absolute; }
+
+    .facebook-link {
+      top: 30px;
+      left: 30px; }
+
+    .odnoklassniki-link {
+      top: 30px;
+      right: 30px; }
+
+    .mail-link {
+      display: inline-block;
+      position: absolute;
+      text-align: center;
+      left: 50%;
+      top: 30px;
+      transform: translateX(-50%); }
+
+    .moldcell {
+      position: absolute;
+      bottom: 30px;
+      left: 30px; }
+
+    .merged-link {
+      position: absolute;
+      right: 30px;
+      bottom: 30px;
+      text-align: right; }
+    .merged-link .social-link {
+      position: static; } }
+  
+</style>
