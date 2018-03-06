@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'eraserdustregular';
-    src: url('../fonts/erasdust-webfont.eot');
+    src: url('../
+    fonts/erasdust-webfont.eot');
     src: url('../fonts/erasdust-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/erasdust-webfont.woff2') format('woff2'),
          url('../fonts/erasdust-webfont.woff') format('woff'),
@@ -19,6 +20,24 @@ html {
 
 body {
   font-family: 'eraserdustregular';
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.inner-content {
+  position: relative;
+  margin-top: -50px;
 }
 
 a {
@@ -31,16 +50,11 @@ a {
   text-align: center;
   display: block;
   margin: 0 auto;
-  margin-top: 15%;
 }
 
 .social-links {
-  position: absolute;
-  bottom: 30px;
-  left: 0;
-  width: 100%;
-  padding: 0 15px;
   text-align: center;
+  margin-top: 20px;
 }
 
 .social-link {
@@ -86,7 +100,7 @@ a {
 }
 
 .merged-link {
-  margin-top: 6px;
+  margin-top: 15px;
 }
 
 .viber-link {
@@ -107,51 +121,112 @@ a {
   background-size: 32px 28px;
   margin-right: 8px;
   vertical-align: middle;
+  margin-left: 15px;
 }
 
-@media (min-width: 768px) {
+.swiper-container {
+  margin-left: auto;
+  padding: 30px 30px 30px 0;
+  width: 320px;
+}
+.swiper-wrapper {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  .swiper-slide {
+    color: #32325d;
+    border-radius: 6px;
+    position: relative;
+    transform: translatey(0px);
+    line-height: 1.44;
+    height: auto;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &.is-pink {
+      background-color: #f6a4eb;
+    }
+    &.is-green {
+      background-color: #74e4a2;
+    }
+    &.is-orange {
+      background-color: #ffa27b;
+    }
+    &.is-blue {
+      background-color: #68d4f8;
+    }
+    &:after {
+      content: '';
+      transition: all 8s ease-in-out;
+      position: absolute;
+      width: 90%;
+      height: 102%;
+      left: 50%;
+      top: calc(50% + 10px);
+      z-index: -1;
+      border-radius: 10px;
+      transform: translateX(-50%) translateY(-50%);
+      filter: blur(10px);
+      opacity: .5;
+      background-color: inherit;
+    }
+  }
+  .swiper-inner-slide {
+    padding: 15px 20px;
+  }
+}
+
+.review-date {
+  font-size: 13px;
+  font-style: italic;
+  text-align: right;
+  margin-top: 8px;
+}
+
+.review-author {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.reviewer-pic {
+  text-align: center;
+  margin: 8px auto 0;
+  width: 50px;
+  height: 50px;
+  img {
+    border-radius: 50%;
+  }
+}
+
+.emoji {
+  font-family: "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 20px;
+  display: block;
+  text-align: center;
+  margin: 8px 0;
+  letter-spacing: 5px;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    height: auto;
+  }
+  .content {
+    position: relative;
+    height: auto;
+  }
   .minidet-logo {
-    position: absolute;
-    transform: translateY(-50%) translateX(-50%);
-    left: 50%;
-    top: 50%;
-    margin-top: 0%;
     max-width: 504px;
   }
-  .social-links {
-    position: static;
+  .inner-content {
+    margin-top: 50px;
   }
-  .social-link {
-    position: absolute;
-  }
-  .facebook-link {
-    top: 30px;
-    left: 30px;
-  }
-  .odnoklassniki-link {
-    top: 30px;
-    right: 30px;
-  }
-  .mail-link {
-    display: inline-block;
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    top: 30px;
-    transform: translateX(-50%);
-  }
-  .moldcell {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-  }
-  .merged-link {
-    position: absolute;
-    right: 30px;
-    bottom: 30px;
-    text-align: right;
-    .social-link {
-      position: static;
-    }
+  .swiper-container {
+    padding-left: 30px;
+    margin-left: 0;
+    width: 100%;
   }
 }
