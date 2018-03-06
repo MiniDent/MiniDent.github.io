@@ -161,7 +161,10 @@ a {
   width: 50px;
   height: 50px; }
   .reviewer-pic img {
-    border-radius: 50%; }
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: block; }
 
 .emoji {
   font-family: "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol";
