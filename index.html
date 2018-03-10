@@ -78,16 +78,15 @@
 
     items = jQuery.map(reviews, function (review) {
 
-      return $(`<div class="swiper-slide">
+      return $(`<a href="${review.review_url}" class="swiper-slide" target="_blank">
           <div class="swiper-inner-slide">` +
-        `<a class="review-url" href="${review.review_url}" target="_blank"><i class="md-fb"></i></a>` +
         `<div class="review-author">${review.reviewer.name}</div>` +
         `<div class="reviewer-pic"><img class="swiper-lazy" src="https://graph.facebook.com/${review.reviewer.id}/picture" alt=""></div>` +
         `<div class="review-rating">${"<i class=\"md-star\"></i>".repeat(review.rating)}</div>` +
         `<div>${review.review_text !== undefined ? review.review_text : ''}</div>` +
         `<div class="review-date">${moment(review.created_time).format('LL')}</div>` +
         `</div>
-      </div>`)
+      </a>`)
     })
   }).done(function () {
     $('.swiper-wrapper').append(items);
