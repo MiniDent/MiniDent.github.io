@@ -38,9 +38,12 @@
 .md-star:before {
   content: "\61";
   font-size: 24px;
-  color: #FEE55D;
+  color: #FEE364;
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
   margin: 0 4px;
+  .is-yellow & {
+    color: #69A0FC;
+  }
 }
 
 .md-fb {
@@ -191,6 +194,9 @@ a {
     &.is-pink {
       background-color: #f6a4eb;
     }
+    &.is-yellow {
+      background-color: #FEE55D;
+    }
     &.is-green {
       background-color: #74e4a2;
     }
@@ -198,7 +204,7 @@ a {
       background-color: #ffa27b;
     }
     &.is-blue {
-      background-color: #68d4f8;
+      background-color: #69A0FC;
     }
     &:after {
       content: '';

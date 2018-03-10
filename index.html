@@ -75,7 +75,8 @@
   let items = [];
   $.getJSON("./reviews.json", function (data) {
     let reviews = data.reviews;
-    let color_classes = ['is-pink', 'is-green', 'is-orange', 'is-blue'];
+    // let color_classes = ['is-pink', 'is-green', 'is-orange', 'is-blue'];
+    let color_classes = ['is-yellow', 'is-blue'];
     let color_class;
 
     items = jQuery.map(reviews, function (review) {

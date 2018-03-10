@@ -25,9 +25,11 @@
 .md-star:before {
   content: "\61";
   font-size: 24px;
-  color: #FEE55D;
+  color: #FEE364;
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
   margin: 0 4px; }
+  .is-yellow .md-star:before {
+    color: #69A0FC; }
 
 .md-fb {
   position: absolute;
@@ -156,12 +158,14 @@ a {
       margin-bottom: 0; }
     .swiper-wrapper .swiper-slide.is-pink {
       background-color: #f6a4eb; }
+    .swiper-wrapper .swiper-slide.is-yellow {
+      background-color: #FEE55D; }
     .swiper-wrapper .swiper-slide.is-green {
       background-color: #74e4a2; }
     .swiper-wrapper .swiper-slide.is-orange {
       background-color: #ffa27b; }
     .swiper-wrapper .swiper-slide.is-blue {
-      background-color: #68d4f8; }
+      background-color: #69A0FC; }
     .swiper-wrapper .swiper-slide:after {
       content: '';
       transition: all 8s ease-in-out;
