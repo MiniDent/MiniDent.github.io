@@ -38,12 +38,8 @@
 .md-star:before {
   content: "\61";
   font-size: 24px;
-  color: #FEE364;
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
   margin: 0 4px;
-  .is-yellow & {
-    color: #69A0FC;
-  }
 }
 
 .md-fb {
@@ -191,20 +187,17 @@ a {
     &:last-child {
       margin-bottom: 0;
     }
-    &.is-pink {
-      background-color: #f6a4eb;
-    }
-    &.is-yellow {
+    &:nth-child(2n+1){
       background-color: #FEE55D;
+      .md-star {
+        color: #69A0FC;
+      }
     }
-    &.is-green {
-      background-color: #74e4a2;
-    }
-    &.is-orange {
-      background-color: #ffa27b;
-    }
-    &.is-blue {
+    &:nth-child(2n) {
       background-color: #69A0FC;
+      .md-star {
+        color: #FEE364;
+      }
     }
     &:after {
       content: '';

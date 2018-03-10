@@ -75,14 +75,10 @@
   let items = [];
   $.getJSON("./reviews.json", function (data) {
     let reviews = data.reviews;
-    // let color_classes = ['is-pink', 'is-green', 'is-orange', 'is-blue'];
-    let color_classes = ['is-yellow', 'is-blue'];
-    let color_class;
 
     items = jQuery.map(reviews, function (review) {
-      color_class = color_classes[Math.floor(Math.random() * color_classes.length)];
 
-      return $(`<div class="swiper-slide ` + color_class + `">
+      return $(`<div class="swiper-slide">
           <div class="swiper-inner-slide">` +
         `<a class="review-url" href="${review.review_url}" target="_blank"><i class="md-fb"></i></a>` +
         `<div class="review-author">${review.reviewer.name}</div>` +
