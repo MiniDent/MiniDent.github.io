@@ -1,6 +1,25 @@
 {
   "reviews": [
     {
+      "created_time": "2018-03-15T12:38:58+0000",
+      "reviewer": {
+        "name": "Ekaterina  Karabadzhak",
+        "id": "903286736498313"
+      },
+      "rating": 5,
+      "review_url": "https://www.facebook.com/permalink.php?story_fbid=930581350435518&id=100004509852385&substory_index=0"
+    },
+    {
+      "created_time": "2018-03-14T17:59:56+0000",
+      "reviewer": {
+        "name": "Cristina Polevoi Dirvari",
+        "id": "425839110943946"
+      },
+      "rating": 5,
+      "review_text": "Multumim din suflet pentru dintii nostri noi, sunteti profesionisti adevarati nu este in Chisinau stomatolog pentru copii mai bun ca dvs si psiholog totodata, pentru noi este un stres mare atit pentru copil cit si pentru mine ca mama dar aici am avut parte de o atirnare aparte, va multumim inca o data!!!",
+      "review_url": "https://www.facebook.com/cristina.dirvari/posts/803731906487996:0"
+    },
+    {
       "created_time": "2018-03-13T12:22:38+0000",
       "reviewer": {
         "name": "Nadea Sainsus",
