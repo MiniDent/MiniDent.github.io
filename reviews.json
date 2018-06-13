@@ -1,6 +1,44 @@
 {
   "reviews": [
     {
+      "created_time": "2018-06-13T14:16:12+0000",
+      "reviewer": {
+        "name": "Katiusha Nartea",
+        "id": "1004823376216515"
+      },
+      "rating": 5,
+      "review_text": "D-ul Vadim va mulțumim din suflet pentru dintisorii noi si sănătoși a lui Dominic� . Ati avut atita rabdare sa lucrați cu un copilaș  de 14 luni. Ați fost salvarea noastră , pe cînd alții ne-au refuzat din cauza vârstei.����",
+      "review_url": "https://www.facebook.com/katiusha.nartea/posts/1960072997358210:0"
+    },
+    {
+      "created_time": "2018-05-30T16:02:47+0000",
+      "reviewer": {
+        "name": "Стелла Ренкеу",
+        "id": "628276530617897"
+      },
+      "rating": 5,
+      "review_text": ".",
+      "review_url": "https://www.facebook.com/renkeustella/posts/1491571820955026:0"
+    },
+    {
+      "created_time": "2018-05-12T11:34:40+0000",
+      "reviewer": {
+        "name": "Vika Romanciuc",
+        "id": "2124293384523689"
+      },
+      "rating": 5,
+      "review_url": "https://www.facebook.com/permalink.php?story_fbid=2185856578367369&id=100008291435994&substory_index=0"
+    },
+    {
+      "created_time": "2018-05-11T13:23:25+0000",
+      "reviewer": {
+        "name": "Maria Alexandru Braila",
+        "id": "904577996294990"
+      },
+      "rating": 5,
+      "review_url": "https://www.facebook.com/nanimaria09/posts/1781731698579611:0"
+    },
+    {
       "created_time": "2018-05-06T19:33:15+0000",
       "reviewer": {
         "name": "Zinutaandrei Jurjiu",
