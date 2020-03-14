@@ -233,5 +233,11 @@ a {
     padding-left: 30px;
     margin-left: 0;
     width: 100%; } }
+.blue-text {
+  color: #69A0FC; }
+
+.yellow-text {
+  color: #E1C339;
+  text-decoration: underline; }
 
 /*# sourceMappingURL=main.css.map */
